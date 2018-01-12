@@ -1,0 +1,10 @@
+[Unit]
+Description=SSH user setup
+After=sshd.service
+
+[Service]
+ExecStart=/bin/sshuser_setup
+Type=oneshot
+
+[Install]
+WantedBy=default.target
